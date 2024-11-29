@@ -7,7 +7,7 @@ import styles from "./MealPage.module.scss";
 import { Meal } from "../../types/meal";
 
 const MealPage: React.FC = () => {
-   const { mealName } = useParams<{ mealName: string }>();
+   const { mealName = "" } = useParams<{ mealName: string }>();
 
    const [meal, setMeal] = useState<Meal | null>(null);
 

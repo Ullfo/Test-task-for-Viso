@@ -77,6 +77,7 @@ const MainPage: React.FC = () => {
 
    const handleCategoryChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
       setSelectedCategory(e.target.value);
+      setSearchParams({ page: "1" });
    };
 
    const toggleRecipeSelection = (recipe: Meal) => {
