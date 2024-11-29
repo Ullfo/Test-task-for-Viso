@@ -1,0 +1,40 @@
+@use "../../styles/helpers/" as *;
+
+.wrapper {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 15px;
+
+   border: 1px solid white;
+   border-radius: 12px;
+   padding: 20px;
+   width: 300px;
+
+   img {
+      width: 200px;
+      height: 200px;
+   }
+}
+
+.title {
+   @include text-heading-2;
+}
+
+.box {
+   display: flex;
+   justify-content: space-around;
+}
+
+.text {
+   @include text-subtitle-1;
+}
+
+.selectButton {
+   background-color: grey;
+
+   &.selected {
+      background-color: Red;
+      color: white;
+   }
+}

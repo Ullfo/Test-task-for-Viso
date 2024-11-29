@@ -1,0 +1,28 @@
+@use "../../styles/helpers/" as *;
+
+.wrapper {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 24px;
+}
+
+.content {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 25px;
+}
+
+.list {
+   width: 100%;
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   gap: 24px;
+}
+
+.button {
+   @include text-button;
+   width: 500px;
+   height: 60px;
+}

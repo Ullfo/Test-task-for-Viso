@@ -1,0 +1,23 @@
+@use "../../styles/helpers/" as *;
+
+.wrapper {
+   display: flex;
+   align-items: center;
+   gap: 8px;
+}
+
+s .page {
+   @include text-button;
+   width: 40px;
+   height: 40px;
+   border-radius: 6px;
+   cursor: pointer;
+}
+
+.dots {
+   display: flex;
+   justify-content: center;
+   align-items: flex-end;
+   width: 28px;
+   height: 28px;
+}

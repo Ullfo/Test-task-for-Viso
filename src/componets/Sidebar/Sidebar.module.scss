@@ -1,0 +1,51 @@
+@use "../../styles/helpers/" as *;
+
+.sidebar {
+   position: fixed;
+   top: 0;
+   right: -300px;
+   width: 300px;
+   height: 100%;
+   background-color: white;
+   box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+   padding: 20px;
+   z-index: 100;
+   transition: transform 0.3s ease-in-out;
+   overflow-y: auto;
+
+   &.open {
+      transform: translateX(-300px);
+   }
+}
+
+.closeButton {
+   @include text-heading-2;
+   background: none;
+   border: none;
+   cursor: pointer;
+   color: #333;
+   margin-bottom: 20px;
+   padding: 10px;
+}
+
+.title {
+   @include text-subtitle-1;
+   margin-bottom: 20px;
+   color: #444;
+}
+
+.recipeList,
+.ingredientList {
+   list-style: none;
+
+   li {
+      padding: 10px 0;
+      border-bottom: 1px solid black;
+      color: #333;
+
+      &:last-child {
+         border-bottom: none;
+         margin-bottom: 25px;
+      }
+   }
+}
